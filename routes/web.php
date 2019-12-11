@@ -49,5 +49,8 @@ Route::group(['middleware'=>['ver']],function(){
 
     Route::get('/student/add', 'StudentController@add')->name('student.add');
     Route::post('/student/add', 'StudentController@insert');
+
+    Route::get('/live_search', 'LiveSearch@index')->name('livesearch.index');;
+    Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
 });
 

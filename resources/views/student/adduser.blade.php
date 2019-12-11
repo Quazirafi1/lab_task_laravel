@@ -13,18 +13,22 @@
 		<tr>
 			<td>USERNAME</td>
 			<td><input type="text" name="username"></td>
+            <td>{{$errors->first('username')}}</td>
 		</tr>
         <tr>
             <td>NAME</td>
             <td><input type="text" name="name"></td>
+            <td>{{$errors->first('name')}}</td>
         </tr>
         <tr>
             <td>CONTACT</td>
             <td><input type="text" name="contact"></td>
+            <td>{{$errors->first('contact')}}</td>
         </tr>
 		<tr>
 			<td>PASSWORD</td>
 			<td><input type="password" name="password"></td>
+            <td>{{$errors->first('password')}}</td>
 		</tr>
 		<tr>
 			<td><input type="submit" name="submit" value="Save"></td>

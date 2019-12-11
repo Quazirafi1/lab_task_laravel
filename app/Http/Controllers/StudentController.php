@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\DB;
+use Validator;
 
 class StudentController extends Controller
 {
@@ -79,6 +80,13 @@ class StudentController extends Controller
     }
 
     function insert(Request $req){
+
+        $req->validate([
+            'username'=>'required',
+            'name'=>'required',
+            'password'=>'required',
+            'contact'=>'required'
+        ]);
 
         $user = new User();
         $user->username = $req->username;

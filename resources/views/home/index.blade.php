@@ -8,6 +8,7 @@
 
 	<a href="{{route('student.add')}}">Add user</a> |
 	<a href="{{route('student.index')}}">UserList</a> |
+    <a href="{{ route('livesearch.index') }} ">View User Information </a> |
 	<a href="/logout">logout</a>
 
 	<table>
